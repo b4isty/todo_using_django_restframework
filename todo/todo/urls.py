@@ -14,33 +14,14 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
-from django.views.generic import TemplateView
+from django.urls import path, include
+from create_todo.views import ToDoView
+# from create_todo.views import ToDoViewSet
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', TemplateView.as_view(template_name='todo/index.html'))
+    # path('api', ToDoViewSet.as_view()),
+    path('', include('create_todo.urls'))
+
 ]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

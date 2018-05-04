@@ -35,6 +35,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'create_todo',
 ]
 
 MIDDLEWARE = [
@@ -122,24 +124,3 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     'static'
 ]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
